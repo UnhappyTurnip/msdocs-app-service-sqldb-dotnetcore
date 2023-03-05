@@ -35,7 +35,7 @@ namespace DotNetCoreSqlDb.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Description")
+                    b.Property<string>("RideName")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");

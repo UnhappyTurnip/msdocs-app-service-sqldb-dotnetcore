@@ -38,6 +38,9 @@ namespace DotNetCoreSqlDb.Migrations
                     b.Property<string>("RideName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("InversionCount")
+                        .HasColumnType("int");
+
                     b.HasKey("ID");
 
                     b.ToTable("Todo");
